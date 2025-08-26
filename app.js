@@ -10,6 +10,6 @@ app.use("/users.json", usersRoutes);
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 app.listen(3333, () => {
-    console.log("Api rodando no https://localhost:3333");
-    console.log("Swagger UI: https://localhost:3333/api-docs");
+    console.log("Api rodando no http://localhost:3333");
+    console.log("Swagger UI: http://localhost:3333/api-docs");
 });
