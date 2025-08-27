@@ -103,4 +103,4 @@ Cada usuário cadastrado segue o seguinte modelo de dados:
 
 A interface gráfica do Swagger facilita a exploração e teste das rotas.
 
-![Swagger UI](./docs/swagger-ui.png)
+![Swagger UI](./swagger.png)

@@ -1,14 +1,5 @@
 [
   {
-    "nome": "Ana",
-    "sobrenome": "Silva",
-    "idade": 22,
-    "profissao": "Estagiária",
-    "cidade": "São Paulo",
-    "estado": "SP",
-    "id": "f01c0640-4ad9-4e0d-b868-c6e49fcc1d02"
-  },
-  {
     "nome": "Bruno",
     "sobrenome": "Almeida",
     "idade": 28,
@@ -178,5 +169,14 @@
     "cidade": "Belém",
     "estado": "PA",
     "id": "ca21a149-4259-4c0f-b355-b55abce85b2d"
+  },
+  {
+    "id": "be0cc8a9-2c78-4268-9708-288c446b2c12",
+    "nome": "Ana",
+    "sobrenome": "Silva",
+    "idade": 22,
+    "profissao": "Estagiária",
+    "cidade": "São Paulo",
+    "estado": "SP"
   }
 ]

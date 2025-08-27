@@ -1,18 +1,26 @@
-const { version } = require("joi");
-const swaggerJsdoc = require("swagger-jsdoc");
+const swaggerJSDoc = require("swagger-jsdoc");
+const path = require("path");
 
-const options = {
-    definition: {
-        openapi: "3.0.0",
-        info: {
-            title: "API de usuários",
-            version: "1.0.0",
-            description: "Documentação da API de usuários",
-        },
+const swaggerDefinition = {
+  openapi: "3.0.0",
+  info: {
+    title: "API de Usuários",
+    version: "1.0.0",
+    description: "Documentação da API de usuários com Swagger",
+  },
+  servers: [
+    {
+      url: "http://localhost:3333",
+      description: "Servidor de desenvolvimento",
     },
-    apis: ["./src/routes/*.js"],
+  ],
 };
 
-const swaggerDocs = swaggerJsdoc(options);
+const options = {
+  swaggerDefinition,
+  apis: [path.resolve(__dirname, "../swagger-docs/*.yaml")],
+};
 
-module.exports = swaggerDocs;
+const swaggerSpec = swaggerJSDoc(options);
+
+module.exports = swaggerSpec;
